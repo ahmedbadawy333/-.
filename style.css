@@ -235,3 +235,79 @@ html {
     /* اعدل الـ 100px دي على حسب طول الناف بار عندك علشان يسيب مسافة مريحة وميغطيش على العنوان */
     scroll-padding-top: 100px; 
 }
+
+/* تنسيقات قسم المقالي */
+.essay-container {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 16px;
+    border: 2px dashed #cbd5e1;
+    font-family: 'Cairo', sans-serif; /* أو الفونت الشغال بيه موقعك */
+}
+
+.essay-main-title {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.essay-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border-right: 6px solid #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.essay-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.essay-question {
+    font-weight: 600;
+    font-size: 17px;
+    color: #1e293b;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.essay-toggle-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.essay-toggle-btn:active {
+    transform: scale(0.98);
+}
+
+.essay-answer {
+    display: none;
+    margin-top: 15px;
+    padding: 16px;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    color: #334155;
+    font-size: 15px;
+    line-height: 1.7;
+    border-right: 3px solid #64748b;
+    animation: fadeIn 0.4s ease;
+}
+
+/* حركة أنيميشن خفيفة عند ظهور الإجابة */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
