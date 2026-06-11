@@ -312,25 +312,3 @@ html {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ضبط الناف بار عشان يكون مرن على شاشات الموبايل */
-nav, .navbar, .nav-container { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px; /* تقليل الحشو الجانبي عشان نوفر مساحة */
-    flex-wrap: nowrap; /* يمنع الكلمات إنها تنزل سطر جديد */
-}
-
-/* ضبط حجم الخط والمسافات بين الزراير على الموبايل */
-.nav-link {
-    font-size: 14px; /* تصغير الخط سنة بسيطة جداً عشان يكفي الشاشة */
-    padding: 6px 8px; /* تقليل المسافة بين الكلمات */
-    white-space: nowrap; /* يمنع الكلمة الواحدة زي "صح أم خطأ" إنها تتقسم على سطرين */
-}
-
-/* لو اللوجو بتاع اسمك BADAWY داخل في الكلام */
-.navbar-brand, .logo {
-    font-size: 18px;
-    margin-left: 5px;
-}
